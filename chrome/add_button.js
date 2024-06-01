@@ -3,7 +3,7 @@
 		const {type, url} = obj;
         console.log("CHANNEL PLAYLIST - ", obj);
 		if (type == "opened_channel" && url.endsWith("videos")) {
-			const req = `http://localhost:5000/get_playlist?url=${url}`;
+			const req = `https://tanmays-helpers.vercel.app/get_playlist?url=${url}`;
             console.log("CHANNEL PLAYLIST - starting fetch");
 			fetch(req)
 				.then(response => response.json())
