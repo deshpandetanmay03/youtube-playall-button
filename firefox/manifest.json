@@ -2,7 +2,6 @@
 	"name": "channel playlist",
 	"version": "1.0.0",
 	"permissions": ["tabs"],
-	"host_permissions": ["http://localhost/*"],
 	"background": {
 		"scripts": ["background.js"]
 	},
