@@ -1,10 +1,12 @@
 chrome -
+
 1 - download the repo
-2 - obtain the crx file
-3 - install the crx file from chrome://extensions/
+
+2 - install the folder from extensions page by load unpacked
 
 firefox -
-not yet
+no
+
 
 now on youtube you can click on the channel name and go to videos and a button will appear
 
