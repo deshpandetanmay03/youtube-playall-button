@@ -1,7 +1,7 @@
 {
 	"name": "channel playlist",
 	"version": "1.0.0",
-	"permissions": ["tabs"],
+	"permissions": ["tabs", "storage"],
 	"background": {
 		"service_worker": "background.js"
 	},
