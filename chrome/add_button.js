@@ -22,7 +22,7 @@ function createButton(url) {
     return button;
 }
 async function fetchPlaylist() {
-    const req = `https://tanmays-helpers.vercel.app/get_playlist?url=${window.location.href}`;
+    const req = `https://tanmays-helpers.vercel.app/api/get_playlist?url=${window.location.href}`;
     const response = await fetch(req);
     const data = await response.json();
     return data["url"];
