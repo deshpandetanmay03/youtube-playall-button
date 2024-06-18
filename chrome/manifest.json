@@ -8,6 +8,7 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.youtube.com/*"],
+            "run_at": "document_end",
 			"js": ["add_button.js"]
 		}
 	],

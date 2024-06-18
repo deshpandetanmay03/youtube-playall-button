@@ -47,9 +47,11 @@ chrome.runtime.onMessage.addListener(async (obj, sender, response) => {
     const playlistUrl = await getPlaylistUrlWithCache(channelName)
 
     let parentElement = document.querySelectorAll('#chips');
-    while (!parentElement) {
+    while (!parentElement || parentElement.length < 1) {
         parentElement = document.querySelectorAll('#chips');
+        await new Promise(resolve => setTimeout(resolve, 100));
     }
+
     const button = createButton(playlistUrl);
     parentElement.forEach(element => {
         element.appendChild(button);
