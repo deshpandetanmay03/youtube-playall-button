@@ -54,6 +54,8 @@ chrome.runtime.onMessage.addListener(async (obj, sender, response) => {
 
     const button = createButton(playlistUrl);
     parentElement.forEach(element => {
-        element.appendChild(button);
+        if (element.childElementCount < 4) {
+            element.appendChild(button);
+        }
     });
 })
