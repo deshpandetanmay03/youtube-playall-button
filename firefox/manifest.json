@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Play All Button",
+  "version": "1.0.2",
+  "description": "Adds a 'Play All' button to YouTube channel pages",
+  "permissions": ["tabs", "storage"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "run_at": "document_end",
+      "js": ["add_button.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "deshpandetanmay2003@gmail.com"
+    }
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "128": "logo.png"
+    },
+    "default_title": "YouTube Play All Button"
+  },
+  "homepage_url": "https://github.com/deshpandetanmay03/youtube-playall-button"
+}

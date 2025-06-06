@@ -1,0 +1,19 @@
+{
+  "name": "youtube-playall-button",
+  "version": "1.0.2",
+  "description": "Adds a 'Play All' button to YouTube channel pages",
+  "scripts": {
+    "build:chrome": "node scripts/build-chrome.js",
+    "build:firefox": "node scripts/build-firefox.js",
+    "build": "npm run build:chrome && npm run build:firefox",
+    "clean": "rimraf output"
+  },
+  "keywords": ["youtube", "extension", "playlist", "firefox", "chrome"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "^6.0.1",
+    "fs-extra": "^11.1.1",
+    "rimraf": "^5.0.1"
+  }
+}
